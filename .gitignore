@@ -1,8 +1,12 @@
+*.ini
+test.sh
+Untitled*
 # Temp
 *.yaml
 *.yml
 *.pem
 test/
+
 
 !.github/*/*
 

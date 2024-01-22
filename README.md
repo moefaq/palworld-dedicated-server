@@ -1,6 +1,5 @@
-| tag | comment                                                                            | image size                                                                                         |
-| --- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| BP  | steamcmd from Steam Binary Archive + Preload Server Application                    | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/moefaq/steamcmd_dockerized/BP) |
-| BS  | steamcmd from Steam Binary Archive, Download Server Application while Container up | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/moefaq/steamcmd_dockerized/BS) |
-| RP  | steamcmd from Debian Repo + Preload Server Application                             | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/moefaq/steamcmd_dockerized/RP) |
-| RS  | steamcmd from Debian Repo，Download Server Application while Container up          | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/moefaq/steamcmd_dockerized/RS) |
+[docker push moefaq/palworld-server-dockerized:tagname](https://hub.docker.com/r/moefaq/palworld-server-dockerized)
+| tag | comment                                                                            | image size                                                                                                |
+| --- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| BS  | steamcmd from Steam Binary Archive, Download Server Application while Container up | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/moefaq/palworld-server-dockerized/BS) |
+| RS  | steamcmd from Debian Repo，Download Server Application while Container up          | ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/moefaq/palworld-server-dockerized/RS) |

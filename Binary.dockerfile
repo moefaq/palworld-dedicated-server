@@ -1,7 +1,7 @@
 FROM moefaq/steamcmd_dockerized:Binary AS builder
 
-RUN steamcmd +login anonymous +app_update 2394010 validate +quit
-WORKDIR ${USERDIR}/Steam/steamapps/common/PalServer
 ADD --chown=steam:steam --chmod=755 docker-entrypoint.sh /
+RUN mkdir -p ${USERDIR}/Steam/steamapps/workshop && \
+    mkdir -p ${USERDIR}/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
 CMD ["./PalServer.sh"]
