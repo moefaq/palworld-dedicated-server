@@ -1,0 +1,35 @@
+version: "3"
+
+networks:
+  palworld:
+
+services:
+  server:
+    image: moefaq/palworld-server-dockerized
+    volumes:
+      - savegames-data:/home/steam/Steam/steamapps/common/PalServer/Pal/Saved/SaveGames:rw
+      - PalServer-data:/home/steam/Steam/steamapps/common/PalServer:rw
+      - workshop-data:/home/steam/Steam/steamapps/workshop:rw
+    restart: on-failure
+    environment:
+      TZ: Asia/Shanghai
+      OPTIONS: ""
+    configs:
+      - source: PalWorldSettings
+        target: /home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
+    ports:
+      - "27000-27050:27000-27050"
+      - "127.0.0.1:25575:25575/tcp"
+      - "8211:8211/udp"
+      - "1985:1985/tcp"
+    networks:
+      - palworld
+
+configs:
+  PalWorldSettings:
+    file: ./PalWorldSettings.ini
+
+volumes:
+  workshop-data:
+  PalServer-data:
+  savegames-data:
