@@ -1,4 +1,17 @@
 [docker push moefaq/palworld-server-dockerized:tagname](https://hub.docker.com/r/moefaq/palworld-server-dockerized)
+- [Docker部署](#docker部署)
+  - [1. 安装Docker以及Docker Compose](#1-安装docker以及docker-compose)
+  - [2. 部署容器](#2-部署容器)
+    - [2.1 准备所需文件文件](#21-准备所需文件文件)
+      - [2.1-A 下载文件](#21-a-下载文件)
+      - [2.1-B git clone](#21-b-git-clone)
+    - [2.2 修改配置文件](#22-修改配置文件)
+    - [2.3 检查文件](#23-检查文件)
+    - [2.3 运行容器](#23-运行容器)
+  - [3. tag说明](#3-tag说明)
+  - [4. 其它说明](#4-其它说明)
+    - [4.1 关于添加运行参数](#41-关于添加运行参数)
+    - [4.2 关于修改 PalWorldSettings.ini 设置后如何生效](#42-关于修改-palworldsettingsini-设置后如何生效)
 
 # Docker部署
 ## 1. 安装Docker以及Docker Compose  
@@ -6,11 +19,11 @@
 
 ## 2. 部署容器
 ### 2.1 准备所需文件文件
-#### 2.1-A
+#### 2.1-A 下载文件
 下载所需文件:  
 [docker-compose.yml](https://github.com/moefaq/palworld-dedicated-server/raw/master/docker-compose.yml)  
 [PalWorldSettings.ini](https://github.com/moefaq/palworld-dedicated-server/raw/master/PalWorldSettings.ini)
-#### 2.1-B
+#### 2.1-B git clone
 通过git clone本项目
 
     git clone https://github.com/moefaq/palworld-dedicated-server.git
